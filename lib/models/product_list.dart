@@ -22,6 +22,10 @@ class ProductList with ChangeNotifier {
     notifyListeners(); //! Notificando os listeners
   }
 
+  int get itemsCount {
+    return _items.length;
+  }
+
   // ! Controlando o Favorite globalmente
   // List<Product> get items {
   //   if (_showFavorityOnly) {
